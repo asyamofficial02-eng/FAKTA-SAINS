@@ -4,546 +4,629 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>30 Eksperimen Anak & Orang Tua | Buku Sains Anak Usia 4–8 Tahun</title>
+  <title>FAKTA SAINS - Buku Eksperimen Anak dan Orang Tua</title>
 
   <meta
     name="description"
-    content="Buku sains anak berisi 30 pertanyaan sehari-hari, penjelasan sederhana, dan eksperimen seru bersama orang tua. Cocok untuk anak usia 4–8 tahun."
+    content="FAKTA SAINS adalah seri buku eksperimen anak dan orang tua berisi pertanyaan sains sederhana, aktivitas seru di rumah, dan panduan belajar bersama keluarga."
   />
 
-  <!-- Favicon / icon tab browser -->
-  <link rel="icon" type="image/webp" href="img/LOGO FAKTA SAINS.webp" />
+  <meta name="theme-color" content="#8fd7ff" />
+
+  <!-- Favicons / Logo Website -->
+  <link rel="icon" type="image/png" sizes="16x16" href="img/logo-fakta-sains.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo-fakta-sains.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="img/logo-fakta-sains.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo-fakta-sains.png" />
+  <link rel="shortcut icon" href="img/Brand Family Time.webp" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- ===================== HEADER ===================== -->
-  <header class="site-header">
+  <!-- Background decoration -->
+  <div class="page-bg" aria-hidden="true">
+    <span class="bubble bubble-1"></span>
+    <span class="bubble bubble-2"></span>
+    <span class="bubble bubble-3"></span>
+    <span class="bubble bubble-4"></span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="header-logo" aria-label="Eksperimen Literasi Anak">
-        <img
-          src="img/LOGO FAKTA SAINS.webp"
-          alt="Logo Eksperimen Literasi Anak"
-        />
+      <a href="#top" class="brand" aria-label="FAKTA SAINS">
+        <img src="img/Brand Family Time.webp" alt="Logo FAKTA SAINS" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">FAKTA SAINS</span>
+          <span class="brand-tagline">Belajar asyik bersama keluarga</span>
+        </div>
       </a>
 
-      <nav class="header-nav">
-        <a href="#isi">Isi Buku</a>
-        <a href="#manfaat">Manfaat</a>
-        <a href="#preview">Preview</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+      <button class="nav-toggle" type="button" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <a href="#beli" class="btn btn-header">Beli Sekarang</a>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="#seri">Seri Buku</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#isi-buku">Isi Buku</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#faq">FAQ</a>
+        <a href="#beli" class="nav-cta">Beli Sekarang</a>
+      </nav>
     </div>
   </header>
 
-  <main id="top">
-    <!-- ===================== HERO ===================== -->
-    <section class="hero-section">
+  <main>
+    <!-- Hero -->
+    <section class="hero section">
       <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="eyebrow">Buku Sains Anak Usia 4–8 Tahun</div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">
+            <span>🔬</span>
+            4 Seri Buku Eksperimen Anak
+          </p>
 
           <h1>
-            30 Eksperimen Seru untuk Anak dan Orang Tua di Rumah
+            Jawab rasa ingin tahu anak lewat
+            <span>eksperimen sains sederhana</span>
+            di rumah.
           </h1>
 
-          <p class="hero-description">
-            Buku edukasi anak berisi pertanyaan sains sehari-hari,
-            penjelasan sederhana, dan eksperimen aman yang bisa dilakukan
-            bersama Ayah dan Ibu.
+          <p class="hero-desc">
+            FAKTA SAINS membantu orang tua mendampingi anak belajar dengan cara
+            mengamati, mencoba, membandingkan, dan menceritakan kembali hasil
+            eksperimen mereka.
           </p>
-
-          <ul class="hero-list">
-            <li>30 pertanyaan sains anak yang dekat dengan kehidupan sehari-hari</li>
-            <li>Bahasa sederhana, hangat, dan ramah anak</li>
-            <li>Eksperimen mudah dengan benda yang ada di rumah</li>
-            <li>Cocok untuk PAUD, TK, dan SD awal</li>
-          </ul>
 
           <div class="hero-actions">
-            <a href="#beli" class="btn">Beli Bukunya Sekarang</a>
-            <a href="#preview" class="btn btn-secondary">Lihat Preview</a>
+            <a href="#beli" class="btn btn-primary">
+              Pesan via WhatsApp
+            </a>
+
+            <a href="#seri" class="btn btn-secondary">
+              Lihat Seri Buku
+            </a>
+          </div>
+
+          <div class="hero-points" aria-label="Keunggulan singkat">
+            <div>
+              <strong>120+</strong>
+              <span>Pertanyaan sains</span>
+            </div>
+
+            <div>
+              <strong>4</strong>
+              <span>Seri pembelajaran</span>
+            </div>
+
+            <div>
+              <strong>Rumah</strong>
+              <span>Eksperimen mudah</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-book-card">
-            <img
-              src="img/cover.webp"
-              alt="Cover buku 30 Eksperimen Anak dan Orang Tua"
-            />
+        <div class="hero-visual reveal">
+          <div class="hero-card">
+            <div class="hero-cover-stack">
+              <img src="img/COVER SERI 1.webp" alt="Cover buku FAKTA SAINS Seri 1" />
+              <img src="img/Seri 2 cover.webp" alt="Cover buku FAKTA SAINS Seri 2" />
+              <img src="img/COVER SERI 3.webp" alt="Cover buku FAKTA SAINS Seri 3" />
+              <img src="img/COVER SERI 4.webp" alt="Cover buku FAKTA SAINS Seri 4" />
+            </div>
+
+            <div class="hero-note">
+              <span class="note-icon">✨</span>
+              <p>
+                Cocok untuk anak yang suka bertanya:
+                “Kenapa bisa begitu?”
+              </p>
+            </div>
           </div>
 
-          <div class="floating-note note-one">30 Topik Sains</div>
-          <div class="floating-note note-two">Ramah Anak</div>
-          <div class="floating-note note-three">Bersama Orang Tua</div>
+          <div class="floating-badge badge-blue">🧪 Eksperimen</div>
+          <div class="floating-badge badge-yellow">🌈 Ceria</div>
+          <div class="floating-badge badge-green">👨‍👩‍👧 Bersama</div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== PROBLEM ===================== -->
-    <section class="section bg-soft" id="problem">
-      <div class="container two-column">
-        <div class="illustration-box">
-          <div class="big-icon">🤔</div>
-          <h2>Anak Suka Bertanya?</h2>
-
-          <div class="speech-list">
-            <span>“Kenapa langit biru?”</span>
-            <span>“Kenapa hujan turun?”</span>
-            <span>“Kenapa kita harus tidur?”</span>
-          </div>
-        </div>
-
-        <div class="section-copy">
-          <h2>
-            Anak Sering Bertanya “Kenapa?”, Tapi Kita Bingung Menjawabnya?
-          </h2>
-
+    <!-- Trust / highlights -->
+    <section class="mini-info section-soft">
+      <div class="container mini-info-grid">
+        <article class="mini-card reveal">
+          <span>👪</span>
+          <h3>Untuk Orang Tua dan Anak</h3>
           <p>
-            Pertanyaan sederhana seperti ini sering muncul dari rasa ingin tahu
-            anak. Tapi kadang, orang tua tidak selalu tahu cara menjelaskan
-            sains dengan bahasa yang ringan dan mudah dipahami.
+            Aktivitas dibuat agar anak tidak belajar sendirian, tetapi ditemani
+            keluarga dengan aman dan menyenangkan.
           </p>
+        </article>
 
+        <article class="mini-card reveal">
+          <span>📝</span>
+          <h3>Ada Halaman Cerita</h3>
           <p>
-            Buku ini hadir untuk membantu Ayah, Ibu, dan guru menjawab
-            pertanyaan anak dengan cara yang menyenangkan.
+            Anak diajak menulis pengalaman setelah mencoba eksperimen, bukan
+            hanya membaca jawaban.
           </p>
-        </div>
+        </article>
+
+        <article class="mini-card reveal">
+          <span>🛡️</span>
+          <h3>Disertai Catatan Aman</h3>
+          <p>
+            Banyak aktivitas dilengkapi arahan agar percobaan dilakukan dengan
+            pendampingan orang dewasa.
+          </p>
+        </article>
       </div>
     </section>
 
-    <!-- ===================== SOLUSI ===================== -->
-    <section class="section bg-blue">
+    <!-- Series -->
+    <section class="section" id="seri">
       <div class="container">
-        <div class="section-heading">
-          <h2>Kenalkan Sains Lewat Cerita Pendek dan Percobaan Sederhana</h2>
+        <div class="section-heading reveal">
+          <p class="eyebrow">
+            <span>📚</span>
+            Koleksi Buku
+          </p>
+
+          <h2>4 Seri FAKTA SAINS</h2>
+
           <p>
-            Anak tidak hanya membaca jawaban. Anak diajak mengamati,
-            mencoba, membandingkan, dan menceritakan kembali apa yang mereka
-            temukan.
+            Setiap seri membawa tema eksperimen berbeda: alam, tubuh manusia,
+            benda sehari-hari, reaksi sederhana, dan pengamatan lingkungan.
           </p>
         </div>
 
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">📖</div>
-            <h3>Baca</h3>
-            <p>
-              Anak memahami konsep sains dengan bahasa sederhana yang dekat
-              dengan dunia mereka.
-            </p>
-          </div>
+        <div class="series-grid" id="seriesGrid">
+          <!-- Card seri dibuat otomatis dari script.js -->
+        </div>
+      </div>
+    </section>
 
-          <div class="feature-card">
-            <div class="feature-icon">🧪</div>
-            <h3>Coba</h3>
-            <p>
-              Anak melakukan aktivitas sederhana bersama orang tua menggunakan
-              benda di rumah.
-            </p>
-          </div>
+    <!-- Benefits -->
+    <section class="section section-soft" id="keunggulan">
+      <div class="container feature-grid">
+        <div class="feature-content reveal">
+          <p class="eyebrow">
+            <span>💡</span>
+            Kenapa Cocok untuk Anak?
+          </p>
 
-          <div class="feature-card">
-            <div class="feature-icon">💬</div>
-            <h3>Ceritakan</h3>
-            <p>
-              Anak belajar menjelaskan kembali hasil pengamatannya dengan
-              percaya diri.
-            </p>
+          <h2>Belajar sains dibuat terasa dekat dengan kehidupan sehari-hari.</h2>
+
+          <p>
+            Anak sering bertanya tentang langit, hujan, tubuh, makanan,
+            magnet, sabun, air, cahaya, bunyi, dan benda-benda di sekitar
+            rumah. Buku ini mengubah pertanyaan sederhana menjadi pengalaman
+            belajar yang hangat.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <span>1</span>
+              <div>
+                <h3>Bahasa ringan</h3>
+                <p>Penjelasan dibuat sederhana agar mudah dipahami anak.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span>2</span>
+              <div>
+                <h3>Eksperimen praktis</h3>
+                <p>Bahan banyak ditemukan di rumah seperti air, gelas, kertas, es, garam, atau balon.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span>3</span>
+              <div>
+                <h3>Mendorong anak bercerita</h3>
+                <p>Anak belajar mengamati lalu menyampaikan kembali hasil temuannya.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-panel reveal">
+          <div class="science-window">
+            <div class="window-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="science-scene">
+              <div class="beaker">🧪</div>
+              <div class="magnify">🔍</div>
+              <div class="star">⭐</div>
+              <h3>Formula Belajar</h3>
+              <p>Bertanya → Mencoba → Mengamati → Menceritakan</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== ISI BUKU ===================== -->
-    <section class="section bg-white" id="isi">
+    <!-- Book content -->
+    <section class="section" id="isi-buku">
       <div class="container">
-        <div class="section-heading">
-          <h2>Apa Saja yang Dipelajari Anak?</h2>
-          <p>
-            Buku ini berisi 30 pertanyaan sains yang dekat dengan kehidupan
-            sehari-hari anak.
+        <div class="section-heading reveal">
+          <p class="eyebrow">
+            <span>🧭</span>
+            Isi Landing Page
           </p>
+
+          <h2>Apa saja yang ditonjolkan dari isi buku?</h2>
         </div>
 
-        <div class="topic-grid">
-          <div class="topic-card">
-            <div class="topic-icon">🌤️</div>
-            <h3>Kenapa Langit Berwarna Biru?</h3>
-            <p>Anak belajar tentang cahaya matahari dan warna langit.</p>
+        <div class="content-tabs reveal">
+  <div class="tab-buttons" role="tablist" aria-label="Kategori isi buku">
+    <button class="tab-btn active" type="button" data-tab="panduan">Panduan</button>
+    <button class="tab-btn" type="button" data-tab="eksperimen">Eksperimen</button>
+    <button class="tab-btn" type="button" data-tab="aktivitas">Aktivitas</button>
+  </div>
+
+  <div class="tab-panel active" id="panduan">
+    <div class="tab-card tab-card-image">
+      <div class="tab-image-wrap">
+        <img src="img/PANDUAN ORTU.webp" alt="Preview halaman panduan orang tua FAKTA SAINS" />
+      </div>
+
+      <div class="tab-text">
+        <span class="tab-label">👨‍👩‍👧 Panduan</span>
+        <h3>Panduan Orang Tua dan Anak</h3>
+        <p>
+          Buku ini membantu orang tua mendampingi anak saat membaca,
+          bertanya, mencoba eksperimen, dan menjaga keamanan selama belajar.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="eksperimen">
+    <div class="tab-card tab-card-image">
+      <div class="tab-image-wrap">
+        <img src="img/EKSPERIMENN.webp" alt="Preview halaman eksperimen FAKTA SAINS" />
+      </div>
+
+      <div class="tab-text">
+        <span class="tab-label">🔬 Eksperimen</span>
+        <h3>Eksperimen Mudah di Rumah</h3>
+        <p>
+          Anak diajak mencoba percobaan sederhana memakai bahan yang dekat
+          dengan kehidupan sehari-hari seperti air, sabun, magnet, es, kertas,
+          balon, telur, dan bahan dapur.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="aktivitas">
+    <div class="tab-card tab-card-image">
+      <div class="tab-image-wrap">
+        <img src="img/AKTIVITAS.webp" alt="Preview halaman tuliskan ceritamu dan evaluasi orang tua" />
+      </div>
+
+      <div class="tab-text">
+        <span class="tab-label">✏️ Aktivitas</span>
+        <h3>Tuliskan Ceritamu dan Evaluasi Orang Tua</h3>
+        <p>
+          Setelah bereksperimen, anak bisa menulis pengalaman belajarnya.
+          Orang tua juga bisa mencatat perkembangan, respons, dan hal menarik
+          yang terlihat selama aktivitas.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="topic-preview reveal">
+          <div class="topic-header">
+            <h3>Contoh Topik dari Tiap Seri</h3>
+            <p>Geser atau klik seri untuk melihat contoh pertanyaan.</p>
           </div>
 
-          <div class="topic-card">
-            <div class="topic-icon">🌧️</div>
-            <h3>Kenapa Hujan Turun dari Awan?</h3>
-            <p>Anak mengenal proses sederhana siklus air.</p>
+          <div class="topic-controls" id="topicControls">
+            <!-- Button topic dibuat otomatis dari script.js -->
           </div>
 
-          <div class="topic-card">
-            <div class="topic-icon">🐟</div>
-            <h3>Kenapa Ikan Bisa Hidup di Air?</h3>
-            <p>Anak belajar bahwa ikan bernapas dengan insang.</p>
-          </div>
-
-          <div class="topic-card">
-            <div class="topic-icon">🌈</div>
-            <h3>Kenapa Pelangi Punya Banyak Warna?</h3>
-            <p>Anak mengenal warna cahaya melalui tetesan air.</p>
-          </div>
-
-          <div class="topic-card">
-            <div class="topic-icon">🫁</div>
-            <h3>Kenapa Kita Bernapas?</h3>
-            <p>Anak memahami pentingnya oksigen untuk tubuh.</p>
-          </div>
-
-          <div class="topic-card">
-            <div class="topic-icon">🌱</div>
-            <h3>Kenapa Kita Harus Menjaga Bumi?</h3>
-            <p>Anak belajar mencintai lingkungan sejak dini.</p>
+          <div class="topic-list" id="topicList">
+            <!-- List topik dibuat otomatis dari script.js -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== FORMAT BAB ===================== -->
-    <section class="section bg-green">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Setiap Bab Dibuat Praktis dan Mudah Diikuti</h2>
+    <!-- How to use -->
+    <section class="section section-soft">
+      <div class="container steps-grid">
+        <div class="section-heading left reveal">
+          <p class="eyebrow">
+            <span>🚀</span>
+            Cara Pakai
+          </p>
+
+          <h2>Belajar cukup mulai dari pertanyaan kecil.</h2>
+
           <p>
-            Strukturnya sederhana, sehingga orang tua atau guru mudah
-            membacakan dan mendampingi anak.
+            Pola pemakaian dibuat sederhana agar orang tua tidak perlu bingung
+            saat menemani anak.
           </p>
         </div>
 
         <div class="steps-list">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <div>
-              <h3>Pertanyaan Utama</h3>
-              <p>Dimulai dari rasa penasaran anak.</p>
-            </div>
-          </div>
+          <article class="step-card reveal">
+            <span>01</span>
+            <h3>Baca pertanyaannya</h3>
+            <p>Anak diajak menebak jawaban sebelum membaca penjelasan.</p>
+          </article>
 
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <div>
-              <h3>Penjelasan Sederhana</h3>
-              <p>Konsep sains dijelaskan dengan bahasa ringan.</p>
-            </div>
-          </div>
+          <article class="step-card reveal">
+            <span>02</span>
+            <h3>Siapkan bahan</h3>
+            <p>Pilih eksperimen yang bahannya tersedia dan aman dilakukan.</p>
+          </article>
 
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <div>
-              <h3>Aktivitas Bersama Ayah dan Ibu</h3>
-              <p>Anak diajak mengamati dan mencoba dengan aman.</p>
-            </div>
-          </div>
+          <article class="step-card reveal">
+            <span>03</span>
+            <h3>Lakukan bersama</h3>
+            <p>Orang tua mendampingi anak saat mencoba dan mengamati.</p>
+          </article>
 
-          <div class="step-card">
-            <div class="step-number">4</div>
-            <div>
-              <h3>Apa yang Terjadi?</h3>
-              <p>Anak memahami hasil pengamatan dengan sederhana.</p>
-            </div>
-          </div>
+          <article class="step-card reveal">
+            <span>04</span>
+            <h3>Ceritakan hasilnya</h3>
+            <p>Anak menulis atau menceritakan kembali apa yang ia lihat.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===================== MANFAAT ===================== -->
-    <section class="section bg-white" id="manfaat">
-      <div class="container two-column">
-        <div class="illustration-box">
-          <div class="big-icon">👨‍👩‍👧‍👦</div>
-          <h2>Momen Belajar Bersama Keluarga</h2>
-          <p>Baca, coba, amati, lalu ceritakan bersama.</p>
-        </div>
-
-        <div class="section-copy">
-          <h2>
-            Bukan Sekadar Buku Bacaan, Tapi Teman Belajar Anak di Rumah
-          </h2>
-
-          <div class="benefit-list">
-            <div class="benefit-item">Melatih rasa ingin tahu anak</div>
-            <div class="benefit-item">Membantu anak berani bertanya</div>
-            <div class="benefit-item">Mengajak anak mengamati benda di sekitarnya</div>
-            <div class="benefit-item">Membuat belajar sains terasa menyenangkan</div>
-            <div class="benefit-item">Mengurangi ketergantungan pada gadget</div>
-            <div class="benefit-item">Cocok untuk aktivitas rumah dan sekolah</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== COCOK UNTUK SIAPA ===================== -->
-    <section class="section bg-blue">
+    <!-- Testimonials -->
+    <section class="section" id="testimoni">
       <div class="container">
-        <div class="section-heading">
-          <h2>Buku Ini Cocok Untuk…</h2>
-        </div>
+        <div class="section-heading reveal">
+          <p class="eyebrow">
+            <span>💬</span>
+            Kata Mereka
+          </p>
 
-        <div class="audience-grid">
-          <div class="audience-card">
-            <div>👪</div>
-            <h3>Orang Tua</h3>
-            <p>Yang ingin mengenalkan sains sejak dini di rumah.</p>
-          </div>
+          <h2>Belajar terasa seperti bermain.</h2>
 
-          <div class="audience-card">
-            <div>👩‍🏫</div>
-            <h3>Guru</h3>
-            <p>Sebagai bahan diskusi dan aktivitas kelas.</p>
-          </div>
-
-          <div class="audience-card">
-            <div>🧒</div>
-            <h3>Anak 4–8 Tahun</h3>
-            <p>Terutama anak yang suka bertanya dan bereksplorasi.</p>
-          </div>
-
-          <div class="audience-card">
-            <div>🎁</div>
-            <h3>Hadiah Edukatif</h3>
-            <p>Untuk anak, keponakan, cucu, atau murid.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== PREVIEW ===================== -->
-    <section class="section bg-soft" id="preview">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Intip Sekilas Isi Bukunya</h2>
           <p>
-            Setiap halaman dibuat ramah anak dengan kalimat sederhana,
-            ilustrasi ekspresif, dan aktivitas yang mudah dipahami.
+            Bagian testimoni bisa diisi dengan ulasan pembeli asli ketika
+            landing page sudah digunakan.
           </p>
         </div>
 
-        <div class="preview-grid">
-          <div class="preview-card">
-            <div class="preview-image-wrap">
-              <img
-                src="img/cover.webp"
-                alt="Cover buku 30 Eksperimen Anak dan Orang Tua"
-              />
-            </div>
-            <div class="preview-content">
-              <h3>Cover Buku</h3>
-              <p>Cover utama buku yang menarik, ceria, dan ramah anak.</p>
-            </div>
-          </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Anak jadi sering bertanya dan semangat mencoba eksperimen
+              sederhana di rumah.”
+            </p>
+            <h3>Orang Tua Siswa</h3>
+          </article>
 
-          <div class="preview-card">
-            <div class="preview-image-wrap">
-              <img
-                src="img/28.webp"
-                alt="Contoh halaman penjelasan buku"
-              />
-            </div>
-            <div class="preview-content">
-              <h3>Halaman Penjelasan</h3>
+          <article class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Visualnya ceria, topiknya dekat dengan kehidupan sehari-hari,
+              dan cocok untuk belajar bersama keluarga.”
+            </p>
+            <h3>Pendamping Belajar</h3>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Bukan cuma membaca, anak juga diajak mengamati, mencoba, dan
+              menulis cerita.”
+            </p>
+            <h3>Ayah dan Ibu</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-soft" id="faq">
+      <div class="container faq-grid">
+        <div class="section-heading left reveal">
+          <p class="eyebrow">
+            <span>❓</span>
+            Pertanyaan Umum
+          </p>
+
+          <h2>FAQ FAKTA SAINS</h2>
+
+          <p>
+            Jawaban singkat untuk calon pembeli sebelum menghubungi CS.
+          </p>
+        </div>
+
+        <div class="faq-list reveal" id="faqList">
+          <article class="faq-item active">
+            <button type="button" class="faq-question">
+              Buku ini cocok untuk usia berapa?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
               <p>
-                Contoh pertanyaan, jawaban sains sederhana, dan aktivitas
-                pengamatan anak.
+                Cocok untuk anak usia belajar awal hingga sekolah dasar dengan
+                pendampingan orang tua, terutama anak yang suka bertanya dan
+                mencoba hal baru.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="preview-card">
-            <div class="preview-image-wrap">
-              <img
-                src="img/bagian eksperimen (1).webp"
-                alt="Contoh aktivitas anak di dalam buku"
-              />
-            </div>
-            <div class="preview-content">
-              <h3>Aktivitas Anak</h3>
+          <article class="faq-item">
+            <button type="button" class="faq-question">
+              Apakah eksperimennya sulit?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
               <p>
-                Bagian yang mengajak anak mencoba, mengamati, dan bercerita.
+                Tidak. Eksperimen dibuat sederhana dengan bahan yang mudah
+                ditemukan di rumah. Namun, tetap disarankan ada pendampingan
+                orang dewasa.
               </p>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="badge-list">
-          <span>Full Color</span>
-          <span>Ramah Anak</span>
-          <span>Mudah Dipahami</span>
-          <span>Aktivitas Bersama Orang Tua</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== CTA MARKETPLACE ===================== -->
-    <section class="section bg-blue" id="beli">
-      <div class="container">
-        <div class="market-card">
-          <div class="market-copy">
-            <h2>Siap Menemani Anak Bereksperimen di Rumah?</h2>
-            <p>
-              Pesan buku “30 Eksperimen Anak & Orang Tua” sekarang dan jadikan
-              waktu belajar anak lebih seru, hangat, dan bermakna.
-            </p>
-
-            <div class="market-buttons">
-              <a href="https://shopee.co.id/" target="_blank" class="btn">
-                Beli di Shopee
-              </a>
-
-              <a href="https://www.tokopedia.com/" target="_blank" class="btn btn-green">
-                Beli di Tokopedia
-              </a>
-
-              <a href="https://www.tiktok.com/" target="_blank" class="btn btn-dark">
-                Beli di TikTok Shop
-              </a>
+          <article class="faq-item">
+            <button type="button" class="faq-question">
+              Apakah bisa membeli satu seri saja?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Bisa disesuaikan dengan stok dan paket penjualan. Tombol beli
+                akan mengarah ke WhatsApp CS untuk konfirmasi paket.
+              </p>
             </div>
-          </div>
+          </article>
 
-          <div class="market-visual">
-            <img
-              src="img/cover.webp"
-              alt="Buku 30 Eksperimen Anak dan Orang Tua"
-            />
-          </div>
+          <article class="faq-item">
+            <button type="button" class="faq-question">
+              Bagaimana cara pesan?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Klik tombol WhatsApp, lalu calon pembeli akan langsung masuk ke
+                chat CS dengan pesan otomatis yang sudah disiapkan.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===================== FAQ ===================== -->
-    <section class="section bg-white" id="faq">
+    <!-- CTA Buy -->
+    <section class="section buy-section" id="beli">
       <div class="container">
-        <div class="section-heading">
-          <h2>Pertanyaan yang Sering Ditanyakan</h2>
+        <div class="buy-card reveal">
+          <div class="buy-content">
+            <p class="eyebrow">
+              <span>🛒</span>
+              Pesan Sekarang
+            </p>
+
+            <h2>Siapkan petualangan sains kecil di rumah.</h2>
+
+            <p>
+              Klik tombol WhatsApp untuk bertanya stok, harga, paket seri,
+              ongkir, dan cara pemesanan ke CS FAKTA SAINS.
+            </p>
+          </div>
+
+          <div class="buy-actions">
+            <a
+              href="#"
+              class="btn btn-primary btn-wa"
+              data-wa-product="Paket Lengkap 4 Seri FAKTA SAINS"
+            >
+              Chat CS via WhatsApp
+            </a>
+
+            <a
+              href="#"
+              class="btn btn-secondary btn-wa"
+              data-wa-product="Info Harga dan Stok Buku FAKTA SAINS"
+            >
+              Tanya Harga & Stok
+            </a>
+          </div>
         </div>
-
-        <div class="faq-list">
-          <details open>
-            <summary>Buku ini cocok untuk anak usia berapa?</summary>
-            <p>
-              Buku ini cocok untuk anak usia 4–8 tahun, terutama PAUD, TK,
-              dan SD awal.
-            </p>
-          </details>
-
-          <details>
-            <summary>Apakah eksperimennya aman?</summary>
-            <p>
-              Eksperimen dibuat sederhana dan tetap perlu pendampingan orang
-              dewasa.
-            </p>
-          </details>
-
-          <details>
-            <summary>Apakah orang tua harus paham sains dulu?</summary>
-            <p>
-              Tidak harus. Penjelasan di dalam buku dibuat ringan agar mudah
-              dibacakan dan dipahami bersama anak.
-            </p>
-          </details>
-
-          <details>
-            <summary>Apakah cocok untuk guru?</summary>
-            <p>
-              Ya. Buku ini bisa digunakan sebagai bahan diskusi, aktivitas
-              pengamatan, atau eksperimen sederhana di kelas.
-            </p>
-          </details>
-
-          <details>
-            <summary>Apakah cocok untuk hadiah?</summary>
-            <p>
-              Ya. Buku ini cocok sebagai hadiah edukatif untuk anak,
-              keponakan, cucu, atau murid.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== FINAL CTA ===================== -->
-    <section class="final-cta">
-      <div class="container">
-        <h2>
-          Mulai dari Pertanyaan Kecil, Anak Bisa Mengenal Dunia Lebih Luas
-        </h2>
-
-        <p>
-          Bantu anak menemukan bahwa belajar bisa dimulai dari hal-hal
-          sederhana di sekitarnya. Dari langit biru, hujan, daun, pelangi,
-          sampai tubuh kita sendiri—semuanya bisa menjadi pintu masuk untuk
-          mencintai ilmu pengetahuan.
-        </p>
-
-        <a href="#beli" class="btn btn-light">Pesan Buku Sekarang</a>
       </div>
     </section>
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- Floating WhatsApp -->
+  <a
+    href="#"
+    class="floating-whatsapp btn-wa"
+    data-wa-product="Paket FAKTA SAINS"
+    aria-label="Chat CS FAKTA SAINS via WhatsApp"
+  >
+    <span>💬</span>
+    <strong>Chat CS</strong>
+  </a>
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img
-          src="img/LOGO FAKTA SAINS.webp"
-          alt="Logo Eksperimen Literasi Anak"
-        />
+        <a href="#top" class="brand footer-logo">
+          <img src="img/logo-fakta-sains.png" alt="Logo FAKTA SAINS" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-name">FAKTA SAINS</span>
+            <span class="brand-tagline">Eksperimen anak dan orang tua</span>
+          </div>
+        </a>
 
         <p>
-          Buku sains anak yang mengajak anak bereksplorasi, berpikir, dan
-          berkreasi melalui pertanyaan sederhana serta aktivitas menyenangkan
-          bersama orang tua.
+          Buku belajar sains sederhana untuk membantu anak bertanya, mencoba,
+          mengamati, dan mencintai ilmu pengetahuan sejak dini.
         </p>
       </div>
 
-      <div class="footer-column">
+      <div class="footer-links">
         <h3>Menu</h3>
-        <a href="#isi">Isi Buku</a>
-        <a href="#manfaat">Manfaat</a>
-        <a href="#preview">Preview</a>
+        <a href="#seri">Seri Buku</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#isi-buku">Isi Buku</a>
         <a href="#faq">FAQ</a>
       </div>
 
-      <div class="footer-column">
-        <h3>Beli Buku</h3>
-        <a href="https://shopee.co.id/" target="_blank">Shopee</a>
-        <a href="https://www.tokopedia.com/" target="_blank">Tokopedia</a>
-        <a href="https://www.tiktok.com/" target="_blank">TikTok Shop</a>
+      <div class="footer-links">
+        <h3>Bantuan</h3>
+        <a href="#" class="btn-wa" data-wa-product="Bantuan pemesanan FAKTA SAINS">
+          Chat WhatsApp
+        </a>
+        <a href="#beli">Cara Pesan</a>
+        <a href="#testimoni">Testimoni</a>
       </div>
 
-      <div class="footer-column">
-        <h3>Catatan</h3>
+      <div class="footer-contact">
+        <h3>Kontak CS</h3>
         <p>
-          Eksperimen dalam buku ini perlu pendampingan orang dewasa, terutama
-          saat menggunakan air panas, api, benda tajam, cahaya terang, atau
-          hewan.
+          Klik tombol WhatsApp untuk diarahkan langsung ke chat CS.
         </p>
+
+        <a
+          href="#"
+          class="footer-wa btn-wa"
+          data-wa-product="Saya ingin konsultasi sebelum membeli FAKTA SAINS"
+        >
+          Hubungi CS
+        </a>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <p>© 2026 Eksperimen Literasi Anak. All Rights Reserved.</p>
+      <p>
+        © <span id="year"></span> FAKTA SAINS. Semua hak cipta dilindungi.
+      </p>
 
-      <button class="back-to-top" type="button" aria-label="Kembali ke atas">
-        ↑
-      </button>
+      <p>
+        Dibuat untuk belajar sains yang aman, hangat, dan menyenangkan.
+      </p>
     </div>
   </footer>
 
-  <a href="#beli" class="mobile-sticky-btn">Beli Buku Sekarang</a>
-
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
