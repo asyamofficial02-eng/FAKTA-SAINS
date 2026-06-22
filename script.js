@@ -10,7 +10,7 @@
   - Tanpa spasi
   Contoh: 6281234567890
 */
-const CS_WHATSAPP_NUMBER = "6281234567890";
+const CS_WHATSAPP_NUMBER = "6282312231156";
 
 /*
   Pesan otomatis saat pembeli klik tombol WhatsApp.
