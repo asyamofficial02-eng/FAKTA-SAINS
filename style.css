@@ -1182,6 +1182,151 @@ background: var(--pink);
 }
 
 /* =========================
+   PRICING SECTION
+========================= */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  transition: 0.24s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+
+.pricing-card-featured {
+  border: 3px solid var(--blue);
+  background:
+    radial-gradient(circle at top right, rgba(255, 229, 138, 0.45), transparent 14rem),
+    var(--white);
+}
+
+.pricing-label {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 32px);
+  padding: 8px 16px;
+  color: var(--white);
+  background: var(--blue);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 950;
+  box-shadow: var(--shadow-soft);
+}
+
+.pricing-top {
+  margin-bottom: 22px;
+}
+
+.pricing-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  background: var(--blue-light);
+  font-size: 1.7rem;
+}
+
+.pricing-top h3 {
+  margin: 0 0 8px;
+  color: var(--blue-dark);
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.pricing-top p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.pricing-price {
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 24px;
+  background: var(--yellow-soft);
+}
+
+.pricing-price span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-weight: 850;
+  font-size: 0.9rem;
+}
+
+.pricing-price strong {
+  display: block;
+  color: var(--blue-dark);
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.pricing-list {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-list li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.pricing-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 1000;
+}
+
+.pricing-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.pricing-note {
+  margin: 24px auto 0;
+  max-width: 720px;
+  color: var(--muted);
+  text-align: center;
+  font-weight: 800;
+}
+
+/* =========================
 16. BUY SECTION
 ========================= */
 
@@ -1386,6 +1531,10 @@ justify-self: center;
 grid-template-columns: 1fr;
 }
 
+.pricing-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .hero {
 min-height: auto;
 }
@@ -1488,6 +1637,20 @@ padding: 34px 22px;
 @media (max-width: 620px) {
 .container {
 width: min(100% - 22px, var(--container));
+}
+
+.pricing-grid {
+  grid-template-columns: 1fr;
+}
+
+.pricing-card {
+  padding: 22px;
+}
+
+.pricing-label {
+  position: static;
+  transform: none;
+  margin: 0 auto 18px;
 }
 
 .section {

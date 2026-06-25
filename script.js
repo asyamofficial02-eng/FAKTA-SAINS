@@ -17,15 +17,15 @@ const CS_WHATSAPP_NUMBER = "6282312231156";
   Teks akan otomatis diubah ke format URL oleh encodeURIComponent.
 */
 function createWhatsAppLink(productName) {
-  const fixedProductName = "BUKU 30 EKSPERIMEN ANAK";
+  const selectedProduct = productName || "PAKET LENGKAP BUKU 30 EKSPERIMEN ANAK";
 
   const message = `
-Halo Kak, saya tertarik dengan ${fixedProductName}.
+Halo Kak, saya tertarik dengan ${selectedProduct}.
 
 Saya ingin bertanya:
-1. Harga paket lengkap/bukunya berapa?
-2. Paketnya berisi seri apa saja?
-3. Apakah stoknya masih tersedia?
+1. Harga paketnya berapa?
+2. Isi paketnya apa saja?
+3. Apakah stoknya tersedia?
 4. Bagaimana cara pesan dan pengirimannya?
 
 Terima kasih.
