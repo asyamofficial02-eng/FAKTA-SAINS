@@ -378,7 +378,7 @@ function setupCountdown() {
     Contoh:
     2026-07-30T23:59:59+07:00
   */
-  const countdownDeadline = new Date("2026-06-30T10:59:59+07:00").getTime();
+  const countdownDeadline = new Date("2026-07-06T23:59:59+07:00").getTime();
 
   const countdownCard = document.querySelector(".countdown-card");
   const daysElement = document.querySelector("#countdownDays");
