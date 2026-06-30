@@ -367,6 +367,81 @@ function setupYear() {
   year.textContent = new Date().getFullYear();
 }
 
+/* Countdown Promo */
+function setupCountdown() {
+  /*
+    GANTI TANGGAL DEADLINE DI SINI.
+
+    Format:
+    Tahun-Bulan-Tanggal Jam:Menit:Detik GMT+7
+
+    Contoh:
+    2026-07-30T23:59:59+07:00
+  */
+  const countdownDeadline = new Date("2026-06-30T10:59:59+07:00").getTime();
+
+  const countdownCard = document.querySelector(".countdown-card");
+  const daysElement = document.querySelector("#countdownDays");
+  const hoursElement = document.querySelector("#countdownHours");
+  const minutesElement = document.querySelector("#countdownMinutes");
+  const secondsElement = document.querySelector("#countdownSeconds");
+  const statusElement = document.querySelector("#countdownStatus");
+
+  if (
+    !countdownCard ||
+    !daysElement ||
+    !hoursElement ||
+    !minutesElement ||
+    !secondsElement ||
+    !statusElement
+  ) {
+    return;
+  }
+
+  function formatNumber(number) {
+    return String(number).padStart(2, "0");
+  }
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = countdownDeadline - now;
+
+    if (distance <= 0) {
+      daysElement.textContent = "00";
+      hoursElement.textContent = "00";
+      minutesElement.textContent = "00";
+      secondsElement.textContent = "00";
+
+      countdownCard.classList.add("is-ended");
+      statusElement.textContent =
+        "Periode promo sudah berakhir. Silakan hubungi CS untuk cek stok dan harga terbaru.";
+
+      clearInterval(countdownInterval);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+      (distance % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const seconds = Math.floor(
+      (distance % (1000 * 60)) / 1000
+    );
+
+    daysElement.textContent = formatNumber(days);
+    hoursElement.textContent = formatNumber(hours);
+    minutesElement.textContent = formatNumber(minutes);
+    secondsElement.textContent = formatNumber(seconds);
+  }
+
+  updateCountdown();
+
+  const countdownInterval = setInterval(updateCountdown, 1000);
+}
+
 /* Init */
 document.addEventListener("DOMContentLoaded", () => {
   renderSeriesCards();
@@ -376,6 +451,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupTopicButtons();
 
   setupWhatsAppButtons();
+  setupCountdown();
   setupMobileNav();
   setupActiveNav();
   setupTabs();
